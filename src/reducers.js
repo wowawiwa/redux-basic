@@ -10,23 +10,19 @@ const { SHOW_ALL } = VisibilityFilters
 function todos(state=[], action) {
     switch(action.type) {
         case ADD_TODO:
-            return Object.assign({}, state, {
-                todos: [
-                    ...state,
-                    {
-                        text: action.text,
-                        completed: false,
-                    }
-                ]
-            })
+            return [
+                ...state,
+                {
+                    text: action.text,
+                    completed: false,
+                }
+            ]
         case TOGGLE_TODO:
-            return Object.assign({}, state, {
-                todos: state.map((todo, index) => {
-                    if (index === action.id) {
-                        return Object.assign({}, todo, {completed: !todo.completed})
-                    }
-                    return todo
-                })
+            return state.map((todo, index) => {
+                if (index === action.id) {
+                    return Object.assign({}, todo, {completed: !todo.completed})
+                }
+                return todo
             })
         default:
             return state

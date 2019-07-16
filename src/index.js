@@ -4,6 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { createStore } from 'redux'
+import todoApp from './reducers'
+import { toggleTodo, addTodo } from './actions';
+const store = createStore(todoApp)
+
+const unsubscribe = store.subscribe(() => console.log(store.getState()))
+store.dispatch(addTodo('Learn redux'))
+store.dispatch(addTodo('Learn redux advanced'))
+store.dispatch(toggleTodo(0))
+unsubscribe()
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
