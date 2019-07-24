@@ -3,13 +3,14 @@ import React from 'react';
 import VisibleTodoList from "./VisibleTodoList"
 import AddTodo from './AddTodo';
 import Footer from './Footer';
+import { VisibilityFilters } from '../actions';
 
-function App() {
+const App = ({ match: { params } }) => {
 
   return (
     <div>
       <AddTodo/>
-      <VisibleTodoList/>
+      <VisibleTodoList filter={params.filter || VisibilityFilters.SHOW_ALL}/>
       <Footer/>
     </div>
   )
