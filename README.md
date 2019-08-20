@@ -1,1 +1,1 @@
-Result of following the [Redux basic tutorial](https://redux-docs.netlify.com/basics/basic-tutorial)
+This TODO application is the result of following two tutorials: [Redux basic tutorial](https://redux-docs.netlify.com/basics/basic-tutorial) and then [Redux with React Router](https://redux.js.org/advanced/usage-with-react-router).
