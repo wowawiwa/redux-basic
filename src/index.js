@@ -6,8 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import Root from './components/Root';
 
-import todoApp from './reducers'
-import { toggleTodo, addTodo, setVisibilityFilter, VisibilityFilters } from './actions';
+import todoApp from './redux/reducers'
+import { toggleTodo, addTodo, setVisibilityFilter, VisibilityFilters } from './redux/actions';
 
 const store = createStore(todoApp)
 

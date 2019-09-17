@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-import { addTodo } from '../actions';
+import { addTodo } from '../redux/actions';
 
 // This is a mixed Presentational / Container component: Because it's so small, it's not worth separating.
 

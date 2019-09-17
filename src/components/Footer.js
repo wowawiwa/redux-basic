@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { VisibilityFilters } from "../actions";
+import { VisibilityFilters } from "../redux/actions";
 import FilterLink from './FilterLink';
 
 const Footer = ({visbility, onVisibilityClick}) => {

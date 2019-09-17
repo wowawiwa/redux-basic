@@ -3,7 +3,7 @@ import React from 'react';
 import VisibleTodoList from "./VisibleTodoList"
 import AddTodo from './AddTodo';
 import Footer from './Footer';
-import { VisibilityFilters } from '../actions';
+import { VisibilityFilters } from '../redux/actions';
 
 const App = ({ match: { params } }) => {
 

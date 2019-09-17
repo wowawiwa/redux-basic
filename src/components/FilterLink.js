@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavLink } from 'react-router-dom'
-import { VisibilityFilters } from '../actions'
+import { VisibilityFilters } from '../redux/actions'
 
 const FilterLink = ({filter, children}) => {
   return(
