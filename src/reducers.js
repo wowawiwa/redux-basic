@@ -38,6 +38,8 @@ function visibilityFilter(state = SHOW_ALL, action) {
   }
 }
 
+// One reducer per part of the state.
+
 const todoApp = combineReducers({
   visibilityFilter,
   todos,
